@@ -1,0 +1,39 @@
+@font-face{
+  font-family: 'PTMono';
+  src: url('Roboto-Light.ttf');
+}
+* {
+  font-family: 'PTMono';
+  text-align: center;
+}
+img {
+  height: 200px;
+}
+i {
+  font-size: 40px;
+  color: #13cf48;
+}
+u {
+  text-decoration-color: #13cf48;
+  text-decoration-style: dotted;
+}
+.all {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+body {
+  margin: 0px;
+}
+.content {
+  margin: 0 auto
+}
+.hello {
+  font-size: 10px;
+}
+a {
+  color: #13cf48;
+  text-decoration: none;
+}
