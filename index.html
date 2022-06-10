@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zavsc</title>
+    <script src="https://kit.fontawesome.com/16ba1e7fb5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="static/jquery.min.js"></script>
+	<script src="static/particles.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<style>
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+.panel {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+	display: flex;
+    align-items: center;
+}
+</style>
+<div id="particles-js"></div>
+<script src="static/particles.js"></script>
+<script type="text/javascript" >
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 380,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#13cf48",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+<div class="panel">
+    <div class="all">
+      <div class="content">
+        <h1>Привет 👋<br>Я <u>Кирилл aka. zavsc</u></h1>
+        <script type="text/javascript" >
+		var now = new Date();
+        var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        var dob = new Date(1995, 3, 22); //Дата рождения
+        var dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
+        var age;
+		
+        age = today.getFullYear() - dob.getFullYear();
+        if (today < dobnow) {
+          age = age-1;
+        }
+
+        document.write (`Мне ${age} лет`);
+		</script>
+        <p>Живу в Липецке<br> Увлекаюсь<br>разработкой веб-сайтов и не только.</p>
+		<pre><a href="http://vk.com/zavsc" title="Мой профиль ВКонтакте"><i class="fab fa-vk"></i></a>   <a href="https://github.com/zavsc" title="Мой профиль GitHub"><i class="fab fa-github"></i></a>   <a href="https://t.me/zavnet" title="Мой аккаунт Telegram"><i class="fab fa-telegram-plane"></i></a>   <a href="mailto:wedytd@bk.ru" title="Моя почта, при клике открывается выбор почтового клиента если у вас его нет то держите адрес моей почты wedytd@bk.ru"><i class="fas fa-envelope"></i></a>   <a href="http://qiwi.com/n/wedytd" title="Мой qiwi кошелёк (перевод по никнейму)"><i class="fas fa-money-bill-wave"></i></a>   <a href="/srv.html" title="Мои девайсы и сервера"><i class="fas fa-server"></i></a>   <a href="https://blog.zavsc.pw/" title="Мой блог"><i class="fas fa-blog"></i></a></pre>
+        <p class='hello'><a href="https://openvk.su/id304">Мой профиль OpenVK</a></p>
+		<p class='hello'><b>Старый ник wedytd</b></p>
+		<p class='hello'>Hosted by <a href="srv.html">Home server</a></p>
+		<p class='hello'><a href="/radio.html">Радио</a></p>
+		<p class='hello'>
+		<audio controls="controls">
+          <source src="https://fm.zavsc.pw/zavfm" type="audio/mpeg">
+        </audio>
+		</p>
+	    <footer><center>This site is open source. <a href="https://github.com/zavsc/zavsc.github.io/">Improve this page.</a></center></footer>
+      </div>
+    </div>
+</div>
+</body>
+</html>
